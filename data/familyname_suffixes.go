@@ -1,6 +1,6 @@
 package data
 
-var Suffixes = map[string][]string{
+var Familyname_Suffixes = map[string][]string{
 	"a":       {"European", "except French Frisian", "Kurdish"},
 	"ya":      {"Kurdish"},
 	"à":       {"Catalan"},
