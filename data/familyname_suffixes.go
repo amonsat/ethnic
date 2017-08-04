@@ -1,6 +1,6 @@
-package ethnic
+package data
 
-var suffixes = map[string][]string{
+var Suffixes = map[string][]string{
 	"a":       {"European", "except French Frisian", "Kurdish"},
 	"ya":      {"Kurdish"},
 	"à":       {"Catalan"},

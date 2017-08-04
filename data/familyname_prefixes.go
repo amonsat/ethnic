@@ -1,6 +1,6 @@
-package ethnic
+package data
 
-var prefixes = map[string][]string{
+var Prefixes = map[string][]string{
 	"A":      {"Romanian"},
 	"Ab":     {"Welsh", "Breton"},
 	"Ap":     {"Welsh"},
