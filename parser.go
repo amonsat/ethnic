@@ -5,6 +5,7 @@ import (
 	"strings"
 
 	"github.com/Amonsat/ethnic/data"
+	"github.com/Amonsat/ethnic/tools"
 )
 
 func ParseFamilyname(familyname string) (prefLangs []string, suffLangs []string) {
@@ -14,7 +15,7 @@ func ParseFamilyname(familyname string) (prefLangs []string, suffLangs []string)
 			prefLangs = append(prefLangs, val...)
 		}
 	}
-	prefLangs = removeDuplicates(prefLangs)
+	prefLangs = tools.RemoveDuplicates(prefLangs)
 	sort.Strings(prefLangs)
 
 	for key, val := range data.Suffixes {
@@ -22,26 +23,7 @@ func ParseFamilyname(familyname string) (prefLangs []string, suffLangs []string)
 			suffLangs = append(suffLangs, val...)
 		}
 	}
-	suffLangs = removeDuplicates(suffLangs)
+	suffLangs = tools.RemoveDuplicates(suffLangs)
 	sort.Strings(suffLangs)
 	return
-}
-
-func removeDuplicates(elements []string) []string {
-	// Use map to record duplicates as we find them.
-	encountered := map[string]bool{}
-	result := []string{}
-
-	for v := range elements {
-		if encountered[elements[v]] == true {
-			// Do not add duplicate.
-		} else {
-			// Record this element as an encountered element.
-			encountered[elements[v]] = true
-			// Append to result slice.
-			result = append(result, elements[v])
-		}
-	}
-	// Return the new slice.
-	return result
 }
