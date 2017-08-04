@@ -157,7 +157,7 @@ var Suffixes = map[string][]string{
 	"ets":     {"Ukrainian", "Belarusian"},
 	"eu":      {"Belarusian"},
 	"ew":      {"Belarusian"},
-	" eŭ":     {"Belarusian Latin"},
+	"eŭ":      {"Belarusian Latin"},
 	"ev":      {"Russian", "all Eastern Slavic languages"},
 	"eva":     {"Russian", "all Eastern Slavic languages"},
 	"evski":   {"Macedonian", "Bulgarian"},
