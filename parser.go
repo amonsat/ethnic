@@ -3,7 +3,7 @@ package ethnic
 import (
 	"strings"
 
-	"./data"
+	"github.com/Amonsat/ethnic/data"
 )
 
 func ParseFamilyname(familyname string) (prefLangs []string, suffLangs []string) {
