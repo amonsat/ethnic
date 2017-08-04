@@ -31,8 +31,8 @@ func ParseFamilyname(familyname string) (prefLangs []string, suffLangs []string)
 func ParseNameSuffixes(nameSuffixes string) (langs []string) {
 	nameSuffixes = strings.ToLower(nameSuffixes)
 
-	for key, val := range data.NameSuffixes {
-		if strings.Contains(nameSuffixes, val) {
+	for key, val := range data.Name_Suffixes {
+		if strings.Contains(nameSuffixes, key) {
 			langs = append(langs, val...)
 		}
 	}
