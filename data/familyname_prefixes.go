@@ -1,6 +1,6 @@
 package data
 
-var Prefixes = map[string][]string{
+var Familyname_Prefixes = map[string][]string{
 	"A":      {"Romanian"},
 	"Ab":     {"Welsh", "Breton"},
 	"Ap":     {"Welsh"},
