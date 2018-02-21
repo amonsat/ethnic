@@ -2,11 +2,15 @@
 Go lib for determine ethnic group of familyname.
 ## Use
 
+### Instalation
+```
+	go get github.com/amonsat/ethnic
+```
 ### Basic Use
 
 ```go
 package main
-import "github.com/Amonsat/ethnic"
+import "github.com/amonsat/ethnic"
 
 func main() {
     prefLangs, suffLangs := ethnic.ParseFamilyname("de la Vega")
